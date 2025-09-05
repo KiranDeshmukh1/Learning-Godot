@@ -8,7 +8,12 @@
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_v8c5x"]
 
 [node name="Player" type="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.071804, -0.0225468, 0.198031)
 script = ExtResource("1_80rmq")
+run_speed = 10.0
+jump_height = 2.25
+jump_time_to_peak = 0.5
+jump_time_to_descent = 0.4
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
